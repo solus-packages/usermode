@@ -1,6 +1,6 @@
 name       : usermode
 version    : 1.111
-release    : 1
+release    : 2
 source     :
     - https://fedorahosted.org/releases/u/s/usermode/usermode-1.111.tar.xz : 3dd0b9639b5bd396b7ea5fada6aaa694dbfdaa3ad06eb95a6eabcdfd02f875c6
 license    : GPL-2.0
@@ -23,3 +23,4 @@ build      : |
     %make
 install    : |
     %make_install
+    chmod 4711 $installdir/usr/sbin/userhelper
