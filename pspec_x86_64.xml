@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>usermode</Name>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <Summary xml:lang="en">Provide superuser privileges to ordinary users</Summary>
+        <Description xml:lang="en">usermode contains the userhelper program, which can be used to allow configured programs to be run with superuser privileges by ordinary users, and several graphical tools for users
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>usermode</Name>
+        <Summary xml:lang="en">Provide superuser privileges to ordinary users</Summary>
+        <Description xml:lang="en">usermode contains the userhelper program, which can be used to allow configured programs to be run with superuser privileges by ordinary users, and several graphical tools for users
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/usermode</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-08-21</Date>
+            <Version>1.111</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>
