@@ -2,10 +2,11 @@
     <Source>
         <Name>usermode</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-2.0</License>
+        <PartOf>programming.devel</PartOf>
         <Summary xml:lang="en">Provide superuser privileges to ordinary users</Summary>
         <Description xml:lang="en">usermode contains the userhelper program, which can be used to allow configured programs to be run with superuser privileges by ordinary users, and several graphical tools for users
 </Description>
@@ -18,22 +19,31 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <Files>
-            <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/applications/redhat-userinfo.desktop</Path>
+            <Path fileType="data">/usr/share/applications/redhat-usermount.desktop</Path>
+            <Path fileType="data">/usr/share/applications/redhat-userpasswd.desktop</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps/badge-small.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/disks.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/keyring.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/keys.xpm</Path>
+            <Path fileType="data">/usr/share/pixmaps/password.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/status_lock.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/status_unlocked.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/user_icon.png</Path>
             <Path fileType="data">/usr/share/usermode</Path>
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2015-08-21</Date>
+        <Update release="3">
+            <Date>2017-03-10</Date>
             <Version>1.111</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

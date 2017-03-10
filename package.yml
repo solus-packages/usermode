@@ -1,16 +1,16 @@
 name       : usermode
-version    : 1.111
-release    : 2
+version    : '1.111'
+release    : 3
 source     :
-    - https://fedorahosted.org/releases/u/s/usermode/usermode-1.111.tar.xz : 3dd0b9639b5bd396b7ea5fada6aaa694dbfdaa3ad06eb95a6eabcdfd02f875c6
+    - http://pkgs.fedoraproject.org/repo/extras/usermode/usermode-1.111.tar.xz/28ba510fbd8da9f4e86e57d6c31cff29/usermode-1.111.tar.xz : 3dd0b9639b5bd396b7ea5fada6aaa694dbfdaa3ad06eb95a6eabcdfd02f875c6
 license    : GPL-2.0
+component  : programming.devel
 summary    : Provide superuser privileges to ordinary users
 description: |
     usermode contains the userhelper program, which can be used to allow configured programs to be run with superuser privileges by ordinary users, and several graphical tools for users
 # undefined reference to `powl`
 clang      : no
 builddeps  :
-    - pkgconfig(glib-2.0)
     - pkgconfig(gtk+-2.0)
     - pkgconfig(libstartup-notification-1.0)
     - pkgconfig(libuser)
