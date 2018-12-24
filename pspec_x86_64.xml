@@ -2,10 +2,10 @@
     <Source>
         <Name>usermode</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
         <PartOf>programming.devel</PartOf>
         <Summary xml:lang="en">Provide superuser privileges to ordinary users</Summary>
         <Description xml:lang="en">usermode contains the userhelper program, which can be used to allow configured programs to be run with superuser privileges by ordinary users, and several graphical tools for users
@@ -19,13 +19,87 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin/consolehelper</Path>
+            <Path fileType="executable">/usr/bin/consolehelper-gtk</Path>
+            <Path fileType="executable">/usr/bin/pam-panel-icon</Path>
+            <Path fileType="executable">/usr/bin/userinfo</Path>
+            <Path fileType="executable">/usr/bin/usermount</Path>
+            <Path fileType="executable">/usr/bin/userpasswd</Path>
+            <Path fileType="executable">/usr/sbin/userhelper</Path>
             <Path fileType="data">/usr/share/applications/redhat-userinfo.desktop</Path>
             <Path fileType="data">/usr/share/applications/redhat-usermount.desktop</Path>
             <Path fileType="data">/usr/share/applications/redhat-userpasswd.desktop</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/as/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/be/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bg/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bn/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bn_IN/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/bs/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cy/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/da/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de_CH/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/el/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_GB/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/et/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fa/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gu/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hr/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hu/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/id/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/is/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ka/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/kn/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ko/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lv/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mai/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mk/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ml/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/mr/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ms/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nds/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nl/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/or/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pa/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pl/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt_BR/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ro/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/si/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sk/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr@latin/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ta/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/te/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tg/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tr/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/vi/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/usermode.mo</Path>
+            <Path fileType="man">/usr/share/man/man1/pam-panel-icon.1</Path>
+            <Path fileType="man">/usr/share/man/man1/userinfo.1</Path>
+            <Path fileType="man">/usr/share/man/man1/usermount.1</Path>
+            <Path fileType="man">/usr/share/man/man1/userpasswd.1</Path>
+            <Path fileType="man">/usr/share/man/man8/consolehelper-gtk.8</Path>
+            <Path fileType="man">/usr/share/man/man8/consolehelper.8</Path>
+            <Path fileType="man">/usr/share/man/man8/userhelper.8</Path>
             <Path fileType="data">/usr/share/pixmaps/badge-small.png</Path>
             <Path fileType="data">/usr/share/pixmaps/disks.png</Path>
             <Path fileType="data">/usr/share/pixmaps/keyring.png</Path>
@@ -34,16 +108,16 @@
             <Path fileType="data">/usr/share/pixmaps/status_lock.png</Path>
             <Path fileType="data">/usr/share/pixmaps/status_unlocked.png</Path>
             <Path fileType="data">/usr/share/pixmaps/user_icon.png</Path>
-            <Path fileType="data">/usr/share/usermode</Path>
+            <Path fileType="data">/usr/share/usermode/usermode.ui</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2017-03-10</Date>
-            <Version>1.111</Version>
+        <Update release="4">
+            <Date>2018-12-24</Date>
+            <Version>1.113</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>

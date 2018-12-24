@@ -1,9 +1,9 @@
 name       : usermode
-version    : '1.111'
-release    : 3
+version    : '1.113'
+release    : 4
 source     :
-    - http://pkgs.fedoraproject.org/repo/extras/usermode/usermode-1.111.tar.xz/28ba510fbd8da9f4e86e57d6c31cff29/usermode-1.111.tar.xz : 3dd0b9639b5bd396b7ea5fada6aaa694dbfdaa3ad06eb95a6eabcdfd02f875c6
-license    : GPL-2.0
+    - https://releases.pagure.org/usermode/usermode-1.113.tar.xz : 99fbfd248b411ed0e7c44d1957b0ecde699b5a968a4db5d37228e82e7b1ba092
+license    : GPL-2.0-or-later
 component  : programming.devel
 summary    : Provide superuser privileges to ordinary users
 description: |
